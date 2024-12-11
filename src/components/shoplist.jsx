@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import Carosel from './caro';
 import Footer from './footer';
-import './ShopList.css';
+import './shoplist.css';
 import { FaShoppingCart } from "react-icons/fa"; // Correct import
 
 const ShopListWithNavbar = () => {
