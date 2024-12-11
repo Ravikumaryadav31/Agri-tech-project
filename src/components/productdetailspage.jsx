@@ -18,7 +18,7 @@ function ProductDetailsPage() {
   };
 
   const handleAddToCart = () => {
-    axios.post('http://localhost:3001/api/cart', {
+    axios.post('https://backend-dxkf.onrender.com/api/cart', {
       product_id: product.id,
       image: product.image,
       productname: product.productname,

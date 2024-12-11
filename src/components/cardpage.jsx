@@ -7,7 +7,7 @@ function CartPage() {
   useEffect(() => {
     // Fetch cart data when the page loads
     axios
-      .get('http://localhost:3001/api/cart')
+      .get('https://backend-dxkf.onrender.com/api/cart')
       .then((response) => {
         setCart(response.data);
       })
@@ -18,7 +18,7 @@ function CartPage() {
     const updatedCart = cart.filter((item) => item.product_id !== productId);
     setCart(updatedCart);
     axios
-      .delete(`http://localhost:3001/api/cart/${productId}`)
+      .delete(`https://backend-dxkf.onrender.com/api/cart/${productId}`)
       .then(() => {
         console.log('Item removed successfully');
       })
@@ -50,13 +50,13 @@ function CartPage() {
 
   const updateCartInDatabase = (updatedCart) => {
     axios
-      .post('http://localhost:3001/api/cart/update', updatedCart)
+      .post('https://backend-dxkf.onrender.com/api/cart/update', updatedCart)
       .catch((err) => console.error('Error updating cart in database:', err));
   };
 
   const handleCheckout = () => {
     axios
-      .post('http://localhost:3001/api/checkout', { cart })
+      .post('https://backend-dxkf.onrender.com/api/checkout', { cart })
       .then(() => {
         alert('Order placed successfully!');
         setCart([]);

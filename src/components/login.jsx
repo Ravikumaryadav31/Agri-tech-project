@@ -18,7 +18,7 @@ const Login = () => {
     }
 
     try {
-      const response = await axios.post('http://localhost:3001/api/login', {
+      const response = await axios.post('https://backend-dxkf.onrender.com/api/login', {
         username,
         password,
       });
@@ -39,7 +39,7 @@ const Login = () => {
       setError('Both fields are required');
     } else {
       try {
-        const response = await axios.post('http://localhost:3001/api/signup', {
+        const response = await axios.post('https://backend-dxkf.onrender.com/api/signup', {
           username,
           password,
         });

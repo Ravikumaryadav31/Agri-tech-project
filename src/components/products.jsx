@@ -45,7 +45,7 @@ function ProductsPage() {
               onMouseLeave={(e) => (e.target.style.transform = 'scale(1)')}
             >
               <img
-                src={product.image.startsWith('http') ? product.image : `http://localhost:3001/${product.image}`}
+                src={product.image.startsWith('http') ? product.image : `https://backend-dxkf.onrender.com/${product.image}`}
                 alt={product.productname}
                 style={{
                   width: '100%',
