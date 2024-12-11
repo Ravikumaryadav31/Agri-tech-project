@@ -44,7 +44,7 @@ const FisrtPage = () => {
           ))}
         </div>
       </div>
-      <Footer /> {/* Adding Footer component */}
+      <Footer />
     </div>
   );
 };
