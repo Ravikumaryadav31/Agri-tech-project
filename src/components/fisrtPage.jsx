@@ -3,7 +3,7 @@ import { useNavigate } from 'react-router-dom';
 import Navbar from "./navibar"; 
 import Carosel from './caro';
 import './shoplist.css';
-import Footer from './footer'; 
+import Footer from './foot'; 
 
 const FisrtPage = () => {
   const navigate = useNavigate();
