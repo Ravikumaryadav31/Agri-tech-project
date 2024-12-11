@@ -5,7 +5,7 @@ import Carosel from './caro';
 import './shoplist.css';
 import Footer from './footer'; 
 
-const FirstPage = () => {
+const FisrtPage = () => {
   const navigate = useNavigate();
 
   const shops = [
@@ -49,4 +49,4 @@ const FirstPage = () => {
   );
 };
 
-export default FirstPage;
+export default FisrtPage;
