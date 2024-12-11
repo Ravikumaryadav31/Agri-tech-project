@@ -4,7 +4,7 @@ import ShopList from './components/shoplist';
 import ProductsPage from './components/products';
 import Login from './components/login';
 
-import FisrtPage from './components/fisrtpage';
+import FisrtPage from './components/firstPage';
 
 
 import About from './components/about';
