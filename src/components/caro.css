@@ -1,0 +1,105 @@
+/* General Carousel Styles */
+.shop-carousel {
+  width: 100%;  /* Set to 100% for full container width */
+  margin: 0 auto;
+  box-shadow: 0 4px 8px rgba(235, 7, 7, 0.892);
+  border-radius: 10px;
+  overflow: hidden;
+  position: relative; /* To properly position captions */
+  display: flex;
+  animation: sliding 0.1s infinite;
+}
+
+.carousel-item {
+  flex-shrink: 0; /* Prevent items from shrinking */
+  height: 100%; /* Fixed height for consistent sizing */
+  position: relative; /* Relative positioning for caption placement */
+}
+
+.carousel-img {
+  width: 100%;
+  height: auto; /* Allow the height to adjust automatically */
+  object-fit: cover; /* Ensures images maintain aspect ratio while filling the space */
+  object-position: center;
+}
+
+.carousel-caption {
+  background-color: rgba(0, 0, 0, 0.6);
+  padding: 10px 20px;
+  border-radius: 5px;
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  max-width: 70%; /* Limits caption width */
+  text-align: center;
+}
+
+.carousel-caption h3,
+.carousel-caption p {
+  color: #fff;
+  margin: 0;
+}
+
+/* Media Queries for Responsiveness */
+
+/* For screens up to 768px (Tablets and below) */
+@media screen and (max-width: 768px) {
+  .shop-carousel {
+    width: 90%; /* Make carousel take 90% width on smaller screens */
+  }
+
+  .carousel-item {
+    height: 250px; /* Adjust height for better fitting on medium-sized screens */
+  }
+
+  .carousel-caption {
+    max-width: 80%; /* Adjust caption width */
+    font-size: 14px; /* Adjust font size for medium screens */
+    bottom: 15px; /* Move caption slightly higher */
+  }
+
+  /* Further adjustments for smaller screens */
+  @media screen and (max-width: 480px) {
+    .carousel-caption {
+      font-size: 12px; /* Smaller font size */
+      bottom: 10px; /* Adjust position for very small screens */
+    }
+    
+    .carousel-img {
+      object-position: top; /* Adjust image positioning */
+    }
+  }
+}
+
+/* For small laptops or larger tablets (1024px to 1440px) */
+@media screen and (min-width: 1024px) and (max-width: 1440px) {
+  .shop-carousel {
+    width: 75%; /* Slightly smaller width for medium-sized devices */
+  }
+
+  .carousel-item {
+    height: 300px; /* Set height for medium devices */
+  }
+
+  .carousel-caption {
+    max-width: 80%; /* Keep caption within reasonable limits */
+    font-size: 16px; /* Slightly larger font for better readability */
+  }
+}
+
+/* For larger screens and desktops (1440px and above) */
+@media screen and (min-width: 1440px) {
+  .shop-carousel {
+    width: 50%; /* Default large size */
+  }
+
+  .carousel-item {
+    height: 400px; /* Larger height for large screens */
+  }
+
+  .carousel-caption {
+    font-size: 18px; /* Larger font size for desktops */
+  }
+}
+

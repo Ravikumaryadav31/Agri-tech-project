@@ -1,0 +1,45 @@
+/* ShopList.css */
+.shop-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 30px;
+  padding: 60px;
+}
+
+.shop-card {
+  background-color: #e0e5e4;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgb(221, 222, 225);
+  padding: 10px;
+  text-align: center;
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+
+.shop-card:hover {
+  transform: translateY(-5px);
+}
+
+.shop-image {
+  object-fit: cover;
+  max-width: 100%;
+  border-radius: 8px;
+  margin-bottom: 10px;
+
+}
+.shop-banner {
+  width: 100%; /* Full width of the container */
+  max-height: 900px; /* Optional: Limit the height */
+  object-fit: cover; /* Ensure the image covers the space without distortion */
+  margin-top: 30px; /* Add a margin above the image to create space between the carousel and the image */
+  margin-bottom: 20px; /* Optional: Add spacing below the banner */
+  border-radius: 10px; /* Optional: Rounded corners */
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Optional: Add a shadow effect */
+}
+
+@media (max-width: 768px) {
+  .shop-banner {
+    max-height: 200px; /* Reduce height on smaller screens */
+  }
+}
+

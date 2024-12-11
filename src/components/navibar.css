@@ -1,0 +1,99 @@
+/* General Navbar Styles */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 30px;
+  background-color: #333; /* Dark background */
+  color: white; /* White text color */
+  font-family: Arial, sans-serif;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Logo Styling */
+.navbar-left .navbar-logo {
+  text-decoration: none;
+  color: white;
+  font-size: 1.8rem;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+.navbar-left .navbar-logo:hover {
+  color: #f39c12; /* Hover effect for logo */
+}
+
+/* Right Section */
+.navbar-right {
+  display: flex;
+  align-items: center;
+  gap: 15px; /* Adds spacing between elements */
+}
+
+/* Right Section Buttons */
+.navbar-right button {
+  padding: 8px 16px;
+  background-color: #444; /* Dark gray button background */
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background-color 0.3s;
+}
+
+.navbar-right button:hover {
+  background-color: #555; /* Slightly lighter gray on hover */
+}
+
+/* Cart Container */
+.cart-container {
+  display: flex;
+  align-items: center;
+  position: relative;
+  cursor: pointer;
+}
+
+.cart-icon {
+  font-size: 1.8rem;
+  color: white;
+  margin-right: 8px;
+  transition: color 0.3s;
+}
+
+.cart-icon:hover {
+  color: #f39c12; /* Hover effect for cart icon */
+}
+
+.cart-count {
+  position: absolute;
+  top: -5px;
+  right: -10px;
+  background-color: red; /* Red badge for cart count */
+  color: white;
+  font-size: 0.8rem;
+  padding: 3px 6px;
+  border-radius: 50%;
+  font-weight: bold;
+  border: 1px solid white;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .navbar-right {
+    justify-content: flex-end;
+    flex-wrap: nowrap; /* Ensure items don't wrap */
+    width: 100%;
+    gap: 10px;
+    margin-top: 10px;
+  }
+
+  .navbar-right button {
+    margin: 0; /* Remove extra margin for consistent alignment */
+  }
+}
