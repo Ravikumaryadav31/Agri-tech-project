@@ -3,7 +3,7 @@ import { useNavigate } from 'react-router-dom';
 import Navbar from "./navibar"; 
 import Carosel from './caro';
 import './shoplist.css';
-import Footer from './Footer'; 
+import Footer from './Footer.jsx'; 
 
 const FirstPage = () => {
   const navigate = useNavigate();

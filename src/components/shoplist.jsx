@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import Carosel from './caro';
-import Footer from './Footer'; // Import Footer component
+import Footer from './Footer.jsx'; 
 import './ShopList.css';
 import { FaShoppingCart } from "react-icons/fa"; // Correct import
 
