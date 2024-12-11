@@ -2,7 +2,7 @@ import React from 'react';
 import { useNavigate } from 'react-router-dom';
 import Navbar from "./navibar"; // Corrected path
 import Carosel from './caro';
-import './ShopList.css';
+import './shopList.css';
 import Footer from './Footer'; // Importing Footer
 
 const FirstPage = () => {
