@@ -32,7 +32,7 @@ const ShopListWithNavbar = () => {
 
   const handleCardClick = async (shopName) => {
     try {
-      const response = await fetch(`http://localhost:3001/api/${shopName}`);
+      const response = await fetch(`https://backend-dxkf.onrender.com/api/${shopName}`);
       if (!response.ok) {
         throw new Error('Failed to fetch products');
       }
