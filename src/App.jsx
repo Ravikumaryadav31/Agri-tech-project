@@ -4,7 +4,9 @@ import ShopList from './components/shoplist';
 import ProductsPage from './components/products';
 import Login from './components/login';
 
-import FisrtPage from './components/fisrtPage';
+import FisrtPage from './components/fisrtpage';
+
+
 import About from './components/about';
 import CartPage from './components/cardpage';
 import ProductDetailsPage from './components/productdetailspage';
@@ -14,7 +16,7 @@ function App() {
   return (
     <Router>
       <Routes>
-        <Route path="/" element={<FirstPage />} /> {/* Default page */}
+        <Route path="/" element={<FisrtPage />} /> {/* Default page */}
         <Route path="/shoplist" element={<ShopList />} />
         <Route path="/login" element={<Login />} />
         <Route path="/product-details/:id" element={<ProductDetailsPage />} />
